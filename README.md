@@ -51,11 +51,6 @@ pip install ultralytics numpy opencv-python matplotlib
 | `k`, `sigma` | gain and blur width of unsharp masking on the template |
 | `idx` | which YOLO detection is used as the template |
 
-## Notes
-
-- The images are large (about 13 MP), so each NCC run takes roughly 30 seconds per image with 4 angles.
-- The template is cropped from the same image, so the template's own location always gives a near-perfect match (NCC close to 1).
-- NCC is sensitive to size and orientation. Planes that look similar but differ in size or angle give low correlation.
 
 ## Course
 
